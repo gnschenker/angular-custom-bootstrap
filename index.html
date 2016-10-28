@@ -1,0 +1,24 @@
+<html>
+<head>
+    <base href="/">
+    <title>Bootstrap Sample</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body id='app'>
+    <h1>Test Custom Bootstrap</h1>
+    <h3 ng-loading>Loading... (please wait)</h3>
+    <span ng-cloak>{{ done }}</span>
+    <pre ng-cloak>{{ features }}</pre>
+
+    
+    <div ng-controller="appCtrl">
+        <div ng-cloak>{{ message }}</div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="flags.js"></script>
+    <script src="auth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
