@@ -19,7 +19,7 @@ function FeatureFlagsService($q, $timeout) {
 
 
 function getFeatureFlag(feature) {
-    var result = this.features.filter(function(x){ return x.name == feature ;})[0];
+    var result = this.getFeatureFlags().filter(function(x){ return x.name == feature ;})[0];
     console.log(feature + ': ', result);
     var featureIsOn = (result === undefined) ? false : result.active != 0;
     console.log('IsOn:', featureIsOn);
